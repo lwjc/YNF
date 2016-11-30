@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">ZhangtianchengYunifang</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">home</string>
+    <string name="classify">classify</string>
+    <string name="shopping">shopping</string>
+    <string name="user">user</string>
+
+
+    <string name="ynf">ynf</string>
+    <string name="first">first</string>
+    <string name="buy">buy</string>
+    <string name="gift">gift</string>
+    <string name="select">select</string>
+    <string name="getAllGoods">getAllGoods</string>
+
+
+    <string name="inputGoodsName">请输入商品名称</string>
+    <string name="classify_fragment_search">搜索</string>
+    <string name="startYuYin">开启语音合成</string>
+    <string name="goods_type">商品分类</string>
+    <string name="host_type">热门分类</string>
+    <string name="sales_goods">促销商品</string>
+    <string name="angongxiao">按功效</string>
+    <string name="water">补水保湿</string>
+    <string name="skin_whitening">美白提亮</string>
+    <string name="tangible_benefits">实惠套装</string>
+    <string name="mask">贴式面膜</string>
+    <string name="pox">控油去痘</string>
+    <string name="face_wash">洁面乳</string>
+
+
+    <string name="goodsInfo">商品详情</string>
+    <string name="collection">收藏</string>
+    <string name="transport_price">运费</string>
+    <string name="free">包邮</string>
+    <string name="salesNum">销量</string>
+    <string name="into_car">加入购物车</string>
+    <string name="buy_rightnow">立即购买</string>
+    <string name="client_tell">客服</string>
+
+
+    <string name="title_user">个人中心</string>
+    <string name="click_login">点击登录</string>
+    <string name="wait_pay">代付款</string>
+    <string name="wait_send_good">代发货</string>
+    <string name="wait_receive_good">待收货</string>
+    <string name="wait_evaluate">待评价</string>
+    <string name="wait_refund">退款</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_coupon">我的现金券</string>
+    <string name="my_lottery">我的抽奖单</string>
+    <string name="personal_center_contact_service">联系客服</string>
+    <string name="my_collection_goods">我收藏的商品</string>
+
+
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="userName">用户名</string>
+    <string name="userPwd">密码</string>
+    <string name="otherLogin">其他登录</string>
+
+
+    <string name="setting">设置</string>
+    <string name="shopping_know">购物须知</string>
+    <string name="advice">意见反馈</string>
+    <string name="clean">清除缓存</string>
+    <string name="aboutUs">关于我们</string>
+    <string name="callPhone">拨打电话</string>
+    <string name="checkUpdate">检查更新</string>
+    <string name="exitLogin">退出登录</string>
+    <string name="exit">一键退出</string>
+
+
+
+    <string name="takePhoto">拍照</string>
+    <string name="pickFromPictrue">从相册选取</string>
+    <string name="cancel">取消</string>
+
+
+    <string name="edit">编辑</string>
+    <string name="selectAll">全选</string>
+    <string name="checkOut">结算</string>
+    <string name="delete">删除</string>
+
+
+    <string name="title_activity_show">ShowActivity</string>
+    <string name="title_activity_web_view_load">WebViewLoadActivity</string>
+    <string name="title_activity_goods_info">GoodsInfoActivity</string>
+    <string name="title_activity_all_goods">AllGoodsActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_efficacy">EfficacyActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_map_location">MapLocationActivity</string>
+    <string name="title_activity_speech_recognizer">SpeechRecognizerActivity</string>
+    <string name="title_activity_my_collection">MyCollectionActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+</resources>
