@@ -1,10 +1,10 @@
 package com.bwie.zhangtianchengyunifang.FragmentDemo;
 
 import android.view.View;
-import android.widget.TextView;
 
 import com.bwie.zhangtianchengyunifang.BaseDataDemo.BaseData;
 import com.bwie.zhangtianchengyunifang.BaseDataDemo.BaseFragment;
+import com.bwie.zhangtianchengyunifang.R;
 import com.bwie.zhangtianchengyunifang.Utils.URLUtils;
 import com.bwie.zhangtianchengyunifang.ViewDemo.ShowingPage;
 
@@ -23,10 +23,8 @@ public class Category_Fragment extends BaseFragment {
 
     @Override
     public View creatSuccessView() {
-        TextView textView =new TextView(getContext());
-        textView.setText(data);
-
-        return textView;
+      View view=View.inflate(getActivity(), R.layout.fragment_classify_layout,null);
+        return view;
     }
     class MyHomeData extends BaseData{
 

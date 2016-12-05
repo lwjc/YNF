@@ -7,14 +7,11 @@
     <string name="classify">classify</string>
     <string name="shopping">shopping</string>
     <string name="user">user</string>
-
-
-    <string name="ynf">ynf</string>
     <string name="first">first</string>
     <string name="buy">buy</string>
     <string name="gift">gift</string>
     <string name="select">select</string>
-    <string name="getAllGoods">getAllGoods</string>
+    <string name="getAllGoods">查看所有商品</string>
 
 
     <string name="inputGoodsName">请输入商品名称</string>
@@ -72,7 +69,6 @@
     <string name="checkUpdate">检查更新</string>
     <string name="exitLogin">退出登录</string>
     <string name="exit">一键退出</string>
-
 
 
     <string name="takePhoto">拍照</string>

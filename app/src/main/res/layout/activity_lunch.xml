@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.zhangtianchengyunifang.AvtivityDemo.LunchActivity">
+
+    <LinearLayout
+        android:id="@+id/luch1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/luch1"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/luch2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/xiaomi_guidance_5"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button_lunch"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15px"
+            android:background="@color/tou"
+            android:text="跳转"
+            android:textColor="@color/green"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView_lun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_toLeftOf="@+id/button_lunch"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_luch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

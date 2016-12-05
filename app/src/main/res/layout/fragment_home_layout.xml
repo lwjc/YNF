@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="御泥坊VIP商城"
+        android:textColor="@color/pink"
+        android:textSize="20px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="280px"
+                android:background="@color/white">
+
+                <com.bwie.zhangtianchengyunifang.ViewDemo.MyRoolViewPager
+                    android:id="@+id/home_fragment_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/home_fragment_point_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="300px"
+                    android:orientation="horizontal"></LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/home_fragment_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/home_fragment_first"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="75px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="5px"
+                        android:padding="10px"
+                        android:src="@mipmap/image1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7px"
+                        android:padding="10px"
+                        android:text="每日签到"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_fragment_buy"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:layout_marginLeft="25px"
+                        android:padding="10px"
+                        android:src="@mipmap/image2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:padding="10px"
+                        android:text="积分商城"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_fragment_gifts"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="80px"
+                        android:layout_height="75px"
+                        android:layout_marginLeft="25px"
+                        android:layout_marginTop="5px"
+                        android:padding="10px"
+
+                        android:src="@mipmap/image3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:padding="10px"
+                        android:text="兑换专区"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_fragment_select"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="80px"
+                        android:layout_height="75px"
+                        android:layout_marginLeft="25px"
+                        android:layout_marginTop="5px"
+                        android:padding="10px"
+                        android:src="@mipmap/image4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:padding="10px"
+                        android:text="真伪查询"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="15px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/home_fragment_lottery_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/benazhoure" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="300px">
+
+                    <LinearLayout
+                        android:id="@+id/more_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="5px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/youhui" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_marginTop="5px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/remen" />
+
+                <ImageView
+                    android:id="@+id/image_bighome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/image_big1" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="@color/white"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/more_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250px"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:background="@mipmap/image_big2"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="@color/white"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/more_line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250px"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:background="@mipmap/image_big3">
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/more_line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="250px"
+                    android:layout_margin="20px"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:background="@mipmap/image_big4"></LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:scrollbars="none"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/more_line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20px"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <com.bwie.zhangtianchengyunifang.Utils.CustomGridView
+                android:layout_marginTop="15px"
+                android:id="@+id/home_fragment_gridView"
+                android:background="@color/gray"
+                android:numColumns="2"
+                android:listSelector="@null"
+                android:verticalSpacing="4.0px"
+                android:horizontalSpacing="4.0px"
+                android:soundEffectsEnabled="true"
+                android:smoothScrollbar="true"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </com.bwie.zhangtianchengyunifang.Utils.CustomGridView>
+
+
+            <TextView
+                android:id="@+id/home_fragment_getAllGoods"
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:text="@string/getAllGoods"
+                android:textSize="20px" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -5,9 +5,9 @@
     <ImageView
         android:id="@+id/iv_error"
         android:src="@mipmap/ic_error_page"
-        android:layout_width="200dp"
+        android:layout_width="400px"
         android:layout_centerInParent="true"
-        android:layout_height="200dp" />
+        android:layout_height="400px" />
     <Button
         android:id="@+id/bt_reload"
         android:background="#fff"

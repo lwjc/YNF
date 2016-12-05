@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.os.Process;
 
 import com.bwie.zhangtianchengyunifang.Utils.ImageLoaderUtils;
+import com.zhy.autolayout.config.AutoLayoutConifg;
 
 import org.xutils.x;
 
@@ -31,6 +32,7 @@ public class MyApplication extends Application {
         mainThreadId = Process.myTid();
 
         handler = new Handler();
+        AutoLayoutConifg.getInstance().useDeviceSize();
         super.onCreate();
 
     }

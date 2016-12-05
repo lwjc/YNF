@@ -1,26 +1,41 @@
-package com.bwie.zhangtianchengyunifang;
+package com.bwie.zhangtianchengyunifang.AvtivityDemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.Window;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.bwie.zhangtianchengyunifang.Factory.FragmentFactory;
+import com.bwie.zhangtianchengyunifang.R;
+import com.bwie.zhangtianchengyunifang.ViewDemo.LazyViewPager;
+import com.zhy.autolayout.AutoLayoutActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AutoLayoutActivity{
 
-    private ViewPager vp;
+    private LazyViewPager vp;
     private RadioGroup rg;
+    private RadioButton rb_cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         //找到控件
-        vp = (ViewPager) findViewById(R.id.vp_main);
+        vp = (LazyViewPager) findViewById(R.id.vp_main);
         rg = (RadioGroup) findViewById(R.id.rg_main);
+        rb_cart = (RadioButton) findViewById(R.id.rb_cart);
+        rb_cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(MainActivity.this,CartActivity.class);
+                startActivity(in);
+            }
+        });
         //设置ViewPager的适配器
         vp.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override

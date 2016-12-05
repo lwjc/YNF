@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/title_common"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="80px"
+        android:orientation="horizontal"
+        android:paddingLeft="80px"
+        android:paddingRight="80px">
+
+        <RadioButton
+            android:id="@+id/rbut_login_ynf"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rbut_login_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="御泥坊账号登录"
+            android:textColor="@color/pink" />
+
+        <RadioButton
+            android:id="@+id/rbut_login_phone"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rbut_login_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="手机快速登录"
+            />
+    </RadioGroup>
+    <!--御泥坊账号登录-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_ynf_login"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:orientation="vertical"
+        android:paddingLeft="80px"
+        android:paddingRight="80px"
+
+        >
+
+        <EditText
+            android:id="@+id/et_login_num"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white"
+            android:hint="手机号"
+            android:inputType="number"
+            android:padding="15px" />
+
+        <EditText
+            android:id="@+id/et_login_psw"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="25px"
+            android:background="@color/white"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:padding="20px" />
+
+
+        <TextView
+            android:id="@+id/tv_forget_login_ps"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:gravity="center_vertical"
+            android:text="忘记密码" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!--手机号码登录-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_phone_login"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:orientation="vertical"
+        android:paddingLeft="80px"
+        android:paddingRight="80px"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white"
+            android:hint="手机号"
+            android:inputType="number"
+            android:padding="15px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_login_code"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="25px">
+
+            <EditText
+                android:id="@+id/et_login_code"
+                android:layout_width="0px"
+                android:layout_height="90px"
+                android:layout_marginRight="40px"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="验证码"
+                android:inputType="number"
+                android:padding="15px" />
+
+            <Button
+                android:id="@+id/but_login_getCode"
+                android:layout_width="wrap_content"
+                android:layout_height="90px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/phone_code"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/pink" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <!--提交登陆按钮-->
+    <Button
+        android:id="@+id/but_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:background="@drawable/login_but_selector"
+        android:onClick="btn_login"
+        android:text="登录"
+        android:textColor="@color/pink" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120px"
+            android:background="@mipmap/advert"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80px"
+            android:id="@+id/imageView_advert" />
+        <TextView
+            android:id="@+id/tv_login_noVip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="第三方快速登录用户不享受任何御泥坊会员权益"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_login_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/ico_big_right_red"
+            android:gravity="center_vertical"
+            android:text="第三方快速登录 "
+            android:textColor="@color/pink"
+            android:textSize="15sp"
+            android:layout_above="@+id/tv_login_noVip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

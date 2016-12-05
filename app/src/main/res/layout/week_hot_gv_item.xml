@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ImageView
+    android:id="@+id/weekhot_gv_item_img"
+    android:layout_width="200px"
+    android:layout_height="200px"
+    android:layout_marginBottom="5px"
+    android:src="@mipmap/ic_error_page"/>
+    <TextView
+        android:id="@+id/weekhot_gv_item_tv"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:text="ss"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/weekhot_gv_item_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ss"
+            android:textColor="#ff95ca"/>
+        <TextView
+            android:id="@+id/weekhot_gv_item_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ssss"
+            android:textColor="#f0f0f0"
+            android:layout_marginLeft="15px"
+            />
+    </LinearLayout>
+
+</LinearLayout>

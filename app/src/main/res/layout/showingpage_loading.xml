@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <ProgressBar
         style="@style/Widget.AppCompat.ProgressBar"
-        android:layout_width="200dp"
+        android:layout_width="400px"
         android:layout_centerInParent="true"
-        android:layout_height="200dp" />
+        android:layout_height="400px" />
 </RelativeLayout>

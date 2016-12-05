@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:background="#FFFFFF"
+
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/but_title_left"
+        android:layout_width="100px"
+        android:layout_height="100px">
+
+        <ImageView
+            android:id="@+id/but_title_left_image"
+            android:layout_width="15px"
+            android:layout_height="40px"
+            android:layout_margin="20px"
+            android:background="@drawable/back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0px"
+        android:layout_height="50px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="登陆"
+        android:textSize="30px" />
+
+
+    <TextView
+        android:id="@+id/tv_title_right"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:text="注册"
+        android:textSize="30px"
+        android:textColor="@color/pink"
+        />
+
+</LinearLayout>
